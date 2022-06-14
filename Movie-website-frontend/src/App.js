@@ -4,7 +4,6 @@ import "./App.css";
 import { Add } from "./components/Add";
 import Login from "./components/login/Login";
 import { MovieInfo } from "./components/Movie Infopage/MovieInfo";
-import Navbar from "./components/Navbar";
 import { Playlist } from "./components/Playlist";
 import Register from "./components/register/Register";
 import { Watched } from "./components/Watched";

@@ -27,10 +27,6 @@ export const GlobalProvider = (props) => {
   const addMovieToWatchlist = (movie) => {
     dispatch({ type: "ADD_MOVIE_TO_WATCHLIST", payload: movie });
   };
-
-  const viewInfo = (movie) => {
-    dispatch({ type: "VIEW_INFO", payload: movie });
-  };
   
   const removeMovieFromWatchlist = (id) => {
     dispatch({ type: "REMOVE_MOVIE_FROM_WATCHLIST", payload: id });
@@ -58,7 +54,7 @@ export const GlobalProvider = (props) => {
         addMovieToWatched,
         moveToWatchlist,
         removeFromWatched,
-        viewInfo
+
       }}
     >
       {props.children}

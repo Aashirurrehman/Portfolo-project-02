@@ -2,16 +2,14 @@ import React, { useContext } from "react";
 import Moment from "react-moment";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalState";
-import { MovieInfo } from "./Movie Infopage/MovieInfo";
+
 
 
 export const ResultCard = ( {movie} ) => {
   const {
     addMovieToWatchlist,
-    addMovieToWatched,
     watchlist,
     watched,
-    viewInfo,
   } = useContext(GlobalContext);
 
   let storedMovie = watchlist.find((o) => o.id === movie.id);
@@ -23,7 +21,7 @@ export const ResultCard = ( {movie} ) => {
     ? true
     : false;
 
-  const watchedDisabled = storedMovieWatched ? true : false;
+ 
 
   return (
     <div className="result-card">

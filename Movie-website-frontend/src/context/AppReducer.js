@@ -28,12 +28,7 @@ export default (state, action) => {
           ),
           watchlist: [action.payload, ...state.watchlist],
         };
-      case "VIEW_INFO":
-        return{
-          viewInfo: state.viewInfo.filter(
-            (movie) => movie.id !== action.payload.id
-          ),
-        }
+      
       case "REMOVE_FROM_WATCHED":
         return {
           ...state,

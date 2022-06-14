@@ -49,4 +49,4 @@ const Login = ({ updateUser}) => {
     )
 }
 
-export default Login
+export default Login;
